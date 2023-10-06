@@ -2,21 +2,118 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Young Serif', serif;
+ 
 }
 header {
-  background: #00f260; 
-  background: -webkit-linear-gradient(
-    to right,
-    #0575e6,
-    #00f260
-  ); 
-  background: linear-gradient(
-    to right,
-    #0575e6,
-    #00f260
-  ); 
+  background: #ba8c02;
+  background: -webkit-linear-gradient(to right, #181818e3, #ba8c0281);
+  background: linear-gradient(to right, #181818fd, #daa400da);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: .1rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.link ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: .5rem;
+  /* border: 1px solid red; */
+}
+.link ul li{
+  text-decoration: none;
+  list-style: none;
+
+  font-size: larger;
+} 
+.link ul li a{
+   text-decoration: none;
+   color: black;
+}
+
+.link ul li a:hover{
+  color: #ba8b02;
+  background-color: #000000; 
+  background: -webkit-linear-gradient(to right, #434343, #000000); 
+  background: linear-gradient(to right, #434343, #000000);
+  
+  padding: 0.8rem;
+  border-radius: 20px;
+  transition: all ease-in-out 500ms;
+}
+main .img img{
+  width: 350px;
+  height: 300px;
+  border-radius: 10px;
+ 
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .5rem;
+  padding: 20px;
+  background: #232526; 
+  background: -webkit-linear-gradient(to right, #414345, #232526); 
+  background: linear-gradient(to right, #414345, #232526);
+   
+  
+}
+.img{
+  padding: 20px;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  background-color: #ffffff17;
+  position: relative;
+
+}
+.img:hover::before{
+    
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.425);
+  border: 1px solid white;
+  border-radius:5px;
+  padding: 5px;
+  position: absolute;
+  top:12%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Faster One', cursive;
+
+}
+.img1:hover::before{
+  content: "MERCEDES";
+}
+.img2:hover::before{
+  content: "AUDİ";
+}
+.img3:hover::before{
+  content: "BMW";
+}
+.img4:hover::before{
+  content: "OPEL";
+}
+.img5:hover::before{
+  content: "WOLKSWAGEN";
+}
+footer p{
+  text-align: center;
+  background: #ba8c02;
+  background: -webkit-linear-gradient(to right, #181818e3, #ba8c0281);
+  background: linear-gradient(to right, #181818fd, #daa400da);
+  padding: 20px;
+ 
+
+}
+span{
+  font-family: 'Faster One', cursive;
 }
