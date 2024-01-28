@@ -88,10 +88,12 @@ main {
   left: 50%;
   transform: translate(-50%,-50%);
   font-family: 'Faster One', cursive;
+  transition: all 1s ease;
 
 }
 .img1:hover::before{
   content: "MERCEDES";
+  
 }
 .img2:hover::before{
   content: "AUDİ";
